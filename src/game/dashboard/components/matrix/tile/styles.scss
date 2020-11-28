@@ -10,6 +10,9 @@
 
 ._interactions {
   cursor: pointer;
+  &:hover {
+    background-color: color.adjust(v.$color-bg, $lightness: 1.5);
+  }
 }
 
 ._layout {

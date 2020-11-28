@@ -7,6 +7,9 @@
 ._interactions, .tile {
   cursor: pointer;
 }
+._interactions:hover, .tile:hover {
+  background-color: #352e50;
+}
 
 ._layout, .tile {
   display: flex;
