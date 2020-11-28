@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as v;
+
+@mixin base-style ($color, $alignment) {
+  color: $color;
+  text-align: $alignment;
+}
+
+.base-player-display {
+  padding: v.$sizing-main-layout-padding;
+  &.one {
+    @include base-style(v.$color-font-primary, left);
+  }
+
+  &.two {
+    @include base-style(v.$color-font-secondary, right);
+  }
+}
+
