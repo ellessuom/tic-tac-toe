@@ -1,8 +1,15 @@
 import React from 'react';
 
-export default function Footer () {
-
+import Tile from './tile';
+import './styles.css';
+export default function Matrix () {
   return (
-    <div>Matrix</div>
-  )
+    <div className="matrix-container">
+      {
+        new Array(9).fill().map((_, i) => (
+          <Tile key={i} i={i} />
+        ))
+      }
+    </div>
+  );
 }

@@ -1,0 +1,28 @@
+@use '../../../../styles/variables' as v;
+@use '../../../../styles/shadows';
+@use 'sass:color' as color;
+
+._sizing {
+  width: v.$sizing-tiles-size;
+  height: v.$sizing-tiles-size;
+  margin: v.$sizing-tiles-margin;
+}
+
+._interactions {
+  cursor: pointer;
+}
+
+._layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  @include shadows.styling;
+  @extend ._sizing;
+  @extend ._interactions;
+  @extend ._layout;
+  background-color: transparent;
+  border-radius: 5px;
+}

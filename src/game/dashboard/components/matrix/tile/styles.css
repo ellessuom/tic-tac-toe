@@ -1,0 +1,23 @@
+._sizing, .tile {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+._interactions, .tile {
+  cursor: pointer;
+}
+
+._layout, .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  box-shadow: 3px 3px 6px #00000030, -3px -3px 6px #FFFFFF10;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

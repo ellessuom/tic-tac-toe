@@ -1,0 +1,8 @@
+@use '../../../styles/variables' as v;
+
+.matrix-container {
+  width: calc(3 * #{v.$sizing-tiles-size} + 6 * #{v.$sizing-tiles-margin});
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
