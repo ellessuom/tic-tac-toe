@@ -3,7 +3,18 @@ $color-font-base: #fafafa;
 $color-font-primary: #80DDF4;
 $color-font-secondary: #E2F480;
 
-$sizing-main-layout-padding: 0 80px;
+$size-font-title: 32px;
 
+$size-font-title: 32px;
+$size-font-subtitle: 32px;
+$size-font-paragraph: 24px;
+
+$weight-title: bold;
+$weight-paragraph: normal;
+$weight-subtitle: $weight-paragraph;
+
+$sizing-font-padding-title: 20px 0px;
+$sizing-font-padding-normal: 10px 0px;
+$sizing-main-layout-padding: 0 80px;
 $sizing-tiles-size: 150px;
 $sizing-tiles-margin: 10px;

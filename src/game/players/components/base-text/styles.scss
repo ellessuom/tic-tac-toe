@@ -1,0 +1,13 @@
+@use '../../../styles/variables' as v;
+
+.title {
+  font-size: v.$size-font-title;
+  font-weight: v.$weight-title;
+  padding: v.$sizing-font-padding-title;
+  font-family: 'Oswald', sans-serif;
+}
+
+.paragraph {
+  color: v.$color-font-base;
+  padding: v.$sizing-font-padding-normal;
+}
