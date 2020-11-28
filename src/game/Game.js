@@ -1,10 +1,14 @@
 import React from 'react';
+import Layout from './layout';
+import Dashboard from './dashboard';
+import Players from './players';
 
 function Game() {
     return (
-        <div className="game">
-            Your game here
-        </div>
+      <Layout>
+        <Players />
+        <Dashboard />
+      </Layout>
     );
 }
 
