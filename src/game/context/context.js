@@ -13,6 +13,13 @@ const DataProvider = ({ children }) => {
     state, actions,
   ]);
 
+  React.useEffect(() => {
+    if (state.usedTiles) {
+      actions.verify();
+    }
+
+  }, [state.usedTiles]);
+
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 

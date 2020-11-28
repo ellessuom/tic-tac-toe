@@ -9,6 +9,7 @@
 }
 
 ._interactions {
+  transition: v.$transition;
   cursor: pointer;
   &:hover {
     background-color: color.adjust(v.$color-bg, $lightness: 1.5);
@@ -28,4 +29,11 @@
   @extend ._layout;
   background-color: transparent;
   border-radius: 5px;
+
+  &.disable {
+    &:hover {
+      background-color: transparent;
+      cursor: auto;
+    }
+  }
 }
