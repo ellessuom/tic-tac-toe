@@ -1,23 +1,29 @@
 import React from 'react';
+import { useData } from "../../../../context";
 import './styles.css';
-
-import { useData } from '../../../../context';
 
 export default function Tile ({ i }) {
   const [ data, actions ] = useData();
   const [isActive, setIsActive] = React.useState(false);
   const handleClick = () => {
-    setIsActive(true);
-    actions.startGame();
+    if (data.canPlay && !isActive) {
+      setIsActive(true);
+      actions.play(i);
+    }
   };
-  // console.log(data);
-
+  const getContent = () => {
+    if (isActive) {
+      return data.p1.selectedTiles.includes(i)? 'X' : 'O';
+    }
+  };
   return (
     <div
       onClick={handleClick}
-      className="tile"
+      className={`tile ${!data.canPlay && 'disable'}`}
     >
-      { isActive && 'X' }
+      {
+        getContent(data.usedTiles.includes(i))
+      }
     </div>
   );
 }
