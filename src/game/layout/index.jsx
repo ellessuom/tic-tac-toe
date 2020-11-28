@@ -1,7 +1,10 @@
-export default function Layout ({children}) {
+import React from 'react';
+
+import './style.css';
+export default function Layout({ children }) {
   return (
-    <div>
-      { children}
+    <div className="game-layout">
+      { children }
     </div>
   )
 }

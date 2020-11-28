@@ -1,0 +1,23 @@
+@use './../styles/variables' as v;
+
+._styling {
+  color: v.$color-font-base;
+}
+
+._sizing {
+  width: 100vw;
+  height: 100vh;
+}
+
+._layout {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.game-layout {
+  @extend ._styling;
+  @extend ._sizing;
+  @extend ._layout;
+}
