@@ -20,9 +20,9 @@ export default function Tile ({ i }) {
     if (data.canPlay && !content) {
       actions.play(i);
       setContent(data.currentPlayer);
-      actions.verify();
     }
   };
+
 
   const getClasses = (player) => {
     let output = ['tile'];

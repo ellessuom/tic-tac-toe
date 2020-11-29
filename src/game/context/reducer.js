@@ -1,20 +1,14 @@
 import {
   INIT,
-  PLAYERS_ID
+  PLAYERS_ID,
+  extractPrevState,
 } from './actions';
 import Cookies from "universal-cookie";
 
-export const initialState = {
+export const initialState = (prevState) => ({
   ...INIT,
-  [PLAYERS_ID.PLAYER_ONE]: {
-    wins: 0,
-    selectedTiles: []
-  },
-  [PLAYERS_ID.PLAYER_TWO]: {
-    wins: 0,
-    selectedTiles: []
-  },
-};
+  ...extractPrevState(prevState),
+});
 
 export default (state, payload) => {
   const cookies = new Cookies();

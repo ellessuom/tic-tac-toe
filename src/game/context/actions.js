@@ -10,6 +10,39 @@ export const INIT = {
   usedTiles: [],
   winnerPattern: '',
   winner: '',
+  [PLAYERS_ID.PLAYER_ONE]: {
+    wins: 0,
+    selectedTiles: []
+  },
+  [PLAYERS_ID.PLAYER_TWO]: {
+    wins: 0,
+    selectedTiles: []
+  },
+};
+
+export const extractPrevState = (prevState) => {
+  if (prevState) {
+   const override = prevState.winner? {
+        currentPlayer: INIT.currentPlayer,
+        usedTiles: INIT.usedTiles,
+        winnerPattern: INIT.winnerPattern,
+        winner: INIT.winnerPattern,
+        [PLAYERS_ID.PLAYER_ONE]: {
+          ...prevState[PLAYERS_ID.PLAYER_ONE],
+          selectedTiles: [],
+        },
+        [PLAYERS_ID.PLAYER_TWO]: {
+          ...prevState[PLAYERS_ID.PLAYER_TWO],
+          selectedTiles: [],
+        },
+    } : {};
+    const output = {
+      ...prevState,
+      ...override,
+    };
+    return output;
+  }
+  return {};
 };
 
 const PATTERS = [
