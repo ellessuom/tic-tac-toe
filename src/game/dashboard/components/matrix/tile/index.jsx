@@ -14,10 +14,32 @@ export default function Tile ({ i }) {
       setContent(data.currentPlayer);
     }
   };
+
+  const getClasses = (player) => {
+    let output = ['tile'];
+    if (data.canPlay) {
+      if (content) {
+        output.push('used');
+      } else {
+        output.push('available', player);
+      }
+    } else {
+      if (content) {
+        output.push('used');
+      } else {
+        output.push('disabled');
+      }
+    }
+    if ([...data.winnerPattern].includes(String(i))) {
+      output.push('highlight-win', data.winner);
+    }
+    return output.join(' ');
+  };
+
   return (
     <div
       onClick={handleClick}
-      className={`tile ${!data.canPlay && 'disable'}`}
+      className={getClasses(data.currentPlayer)}
     >
       {
         !!content? (content === 'p1'? (

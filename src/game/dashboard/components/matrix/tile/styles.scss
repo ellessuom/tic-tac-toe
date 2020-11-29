@@ -8,32 +8,53 @@
   margin: v.$sizing-tiles-margin;
 }
 
-._interactions {
-  transition: v.$transition;
-  cursor: pointer;
-  &:hover {
-    background-color: color.adjust(v.$color-bg, $lightness: 1.5);
-  }
-}
-
 ._layout {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+}
+
+@mixin highlightBox ($color) {
+  box-shadow: 0 0 40px color.adjust($color, $alpha: -0.7);
+}
+
+.highlight {
+  &.p1 {
+    @include highlightBox(v.$color-font-primary);
+  }
+  &.p2 {
+    @include highlightBox(v.$color-font-secondary);
+  }
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .tile {
-  @include shadows.styling;
   @extend ._sizing;
-  @extend ._interactions;
   @extend ._layout;
-  background-color: transparent;
-  border-radius: 5px;
+  transition: v.$transition;
 
-  &.disable {
+  &.available {
+    @include shadows.styling;
+    cursor: pointer;
+
     &:hover {
-      background-color: transparent;
-      cursor: auto;
+      @extend .highlight;
     }
+  }
+
+  &.used {
+    background-color: transparent;
+  }
+
+  &.disabled {
+    @include shadows.styling;
+  }
+
+  &.highlight-win {
+    background-color: color.adjust(v.$color-bg, $lightness: 5);
+    @extend .highlight;
   }
 }

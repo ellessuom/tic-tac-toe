@@ -7,7 +7,8 @@ export const INIT = {
   canPlay: true, // allows to add new items to the matrix
   isTie: false, // no winners - all tiles filled
   currentPlayer: PLAYERS_ID.PLAYER_ONE, // user id, either 'p1' or 'p2'
-  usedTiles: []
+  usedTiles: [],
+  winnerPattern: '',
 };
 
 const PATTERS = [
@@ -27,9 +28,15 @@ export default (state, dispatch) => {
       return false;
     }
     return PATTERS.some((pattern) => {
-      return [...pattern].every((digit) => {
+      const match = [...pattern].every((digit) => {
         return state[id].selectedTiles.includes(parseInt(digit));
       });
+      if (match) {
+        dispatch({
+          winnerPattern: pattern
+        });
+      }
+      return match;
     });
   };
 
@@ -37,7 +44,24 @@ export default (state, dispatch) => {
     if (state.usedTiles.length > 8) {
       return false;
     }
-    return !_playerWon('p1') && !_playerWon('p2');
+    const _dispatchWinner = (playerId) => dispatch({
+      winner: playerId,
+      [playerId]: {
+        ...state[playerId],
+        wins: state[playerId].wins + 1
+      },
+    });
+
+    return [
+      PLAYERS_ID.PLAYER_ONE,
+      PLAYERS_ID.PLAYER_TWO,
+    ].map((playerId) => {
+      if (_playerWon(playerId)) {
+        _dispatchWinner(playerId);
+        return false;
+      }
+      return true;
+    }).every(Boolean);
   };
 
   return ({
