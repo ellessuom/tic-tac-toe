@@ -1,19 +1,17 @@
 import React from 'react';
 import { useData } from "../../../../context";
+import X from '../../../../assets/media/mark_x.svg';
+import O from '../../../../assets/media/mark_o.svg';
+
 import './styles.css';
 
 export default function Tile ({ i }) {
   const [ data, actions ] = useData();
-  const [isActive, setIsActive] = React.useState(false);
+  const [content, setContent] = React.useState(null);
   const handleClick = () => {
-    if (data.canPlay && !isActive) {
-      setIsActive(true);
+    if (data.canPlay && !content) {
       actions.play(i);
-    }
-  };
-  const getContent = () => {
-    if (isActive) {
-      return data.p1.selectedTiles.includes(i)? 'X' : 'O';
+      setContent(data.currentPlayer);
     }
   };
   return (
@@ -22,7 +20,11 @@ export default function Tile ({ i }) {
       className={`tile ${!data.canPlay && 'disable'}`}
     >
       {
-        getContent(data.usedTiles.includes(i))
+        !!content? (content === 'p1'? (
+          <img width={50} src={X} alt="X" />
+        ) : (
+          <img width={50} src={O} alt="O" />
+        )) : null
       }
     </div>
   );
