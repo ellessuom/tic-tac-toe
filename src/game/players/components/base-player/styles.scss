@@ -7,11 +7,11 @@
 
 .base-player-display {
   padding: v.$sizing-main-layout-padding;
-  &.one {
+  &.p1 {
     @include base-style(v.$color-font-primary, left);
   }
 
-  &.two {
+  &.p2 {
     @include base-style(v.$color-font-secondary, right);
   }
 }

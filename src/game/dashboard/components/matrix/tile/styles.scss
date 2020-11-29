@@ -16,7 +16,9 @@
 }
 
 @mixin highlightBox ($color) {
-  box-shadow: 0 0 40px color.adjust($color, $alpha: -0.7);
+  box-shadow:
+          0 0 40px color.adjust($color, $alpha: -0.5),
+          inset 0 0 v.$sizing-tiles-size/2 color.adjust($color, $alpha: -0.7);
 }
 
 .highlight {
@@ -54,7 +56,6 @@
   }
 
   &.highlight-win {
-    background-color: color.adjust(v.$color-bg, $lightness: 5);
     @extend .highlight;
   }
 }

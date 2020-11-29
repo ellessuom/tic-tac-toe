@@ -12,10 +12,10 @@
 }
 
 .highlight.p1, .p1.tile.highlight-win, .p1.tile.available:hover {
-  box-shadow: 0 0 40px rgba(54, 203, 240, 0.3);
+  box-shadow: 0 0 40px rgba(54, 203, 240, 0.5), inset 0 0 75px rgba(54, 203, 240, 0.3);
 }
 .highlight.p2, .p2.tile.highlight-win, .p2.tile.available:hover {
-  box-shadow: 0 0 40px rgba(247, 90, 90, 0.3);
+  box-shadow: 0 0 40px rgba(247, 90, 90, 0.5), inset 0 0 75px rgba(247, 90, 90, 0.3);
 }
 .highlight:active, .tile.highlight-win:active, .tile.available:active:hover {
   box-shadow: none;
@@ -33,9 +33,6 @@
 }
 .tile.disabled {
   box-shadow: 3px 3px 6px #00000030, -3px -3px 6px #FFFFFF;
-}
-.tile.highlight-win {
-  background-color: #fefefe;
 }
 
 /*# sourceMappingURL=styles.css.map */

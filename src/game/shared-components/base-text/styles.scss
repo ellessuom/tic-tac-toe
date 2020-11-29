@@ -1,4 +1,4 @@
-@use '../../../styles/variables' as v;
+@use '../../styles/variables' as v;
 
 .title {
   font-size: v.$size-font-title;
@@ -10,4 +10,10 @@
 .paragraph {
   color: v.$color-font-base;
   padding: v.$sizing-font-padding-normal;
+  font-weight: v.$weight-title;
+}
+
+.subtitle {
+  @extend .title;
+  font-size: v.$size-font-subtitle;
 }
