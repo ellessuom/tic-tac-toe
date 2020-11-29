@@ -1,0 +1,17 @@
+._styling, .game-layout {
+  color: #212121;
+}
+
+._sizing, .game-layout {
+  width: 100vw;
+  height: 100vh;
+}
+
+._layout, .game-layout {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

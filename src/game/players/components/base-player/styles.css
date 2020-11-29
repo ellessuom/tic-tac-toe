@@ -1,0 +1,13 @@
+.base-player-display {
+  padding: 0 80px;
+}
+.base-player-display.p1 {
+  color: #36cbf0;
+  text-align: left;
+}
+.base-player-display.p2 {
+  color: #f75a5a;
+  text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

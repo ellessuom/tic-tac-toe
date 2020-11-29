@@ -1,0 +1,14 @@
+._sizing, .container {
+  flex: 1;
+  height: 100vh;
+  padding: 0 80px;
+}
+
+._layout, .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,8 @@
+.matrix-container {
+  width: calc(3 * 150px + 6 * 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
