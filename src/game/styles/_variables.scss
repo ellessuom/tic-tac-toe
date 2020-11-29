@@ -5,6 +5,8 @@ $color-font-secondary: #f75a5a;
 
 $transition: 200ms;
 
+$radius: 5px;
+
 $size-font-title: 32px;
 $size-font-subtitle: 24px;
 $size-font-paragraph: 24px;
@@ -15,6 +17,7 @@ $weight-subtitle: $weight-paragraph;
 
 $sizing-font-padding-title: 20px 0px;
 $sizing-font-padding-normal: 10px 0px;
-$sizing-main-layout-padding: 0 80px;
+$sizing-main-layout-padding: 0 10vw;
 $sizing-tiles-size: 150px;
 $sizing-tiles-margin: 10px;
+$sizing-button-padding: 15px 30px;

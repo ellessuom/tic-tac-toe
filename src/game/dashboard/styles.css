@@ -1,7 +1,7 @@
 ._sizing, .container {
   flex: 1;
   height: 100vh;
-  padding: 0 80px;
+  padding: 0 10vw;
 }
 
 ._layout, .container {
@@ -9,6 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  ._layout, .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

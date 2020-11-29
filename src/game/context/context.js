@@ -5,7 +5,11 @@ import availableActions from './actions';
 import Cookies from "universal-cookie";
 
 const Context = React.createContext();
-
+/**
+ * Provides a common space for storing the game stats and variables
+ * @param children - Game
+ * @returns {JSX.Element}
+ */
 const DataProvider = ({ children }) => {
   const cookies = new Cookies();
   const [state, dispatch] = React.useReducer(reducer, cookies.get('ttt'), initialState);
@@ -15,6 +19,11 @@ const DataProvider = ({ children }) => {
     state, actions,
   ]);
 
+  /**
+   * Used to verify the state of the game after each action
+   * The update of the state doesn't happen synchronously, therefore this operation cannot be done within the
+   * actions' handler
+   */
   React.useEffect(() => {
     if (state.usedTiles) {
       actions.verify();
@@ -25,6 +34,12 @@ const DataProvider = ({ children }) => {
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 
+/**
+ * Data consumer
+ * Am error will be thrown only during development, whenever this function is being implemented outside of its
+ * parent's scope
+ * @returns {Context}
+ */
 export function useData() {
   const context = React.useContext(Context);
   if (!context) {

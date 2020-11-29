@@ -8,11 +8,26 @@
   margin: v.$sizing-tiles-margin;
 }
 
+@media screen and (max-width: 600px){
+  ._sizing {
+    width: 25vw;
+    height: 25vw;
+    margin: v.$sizing-tiles-margin;
+  }
+}
+@media screen and (max-width: 350px){
+  ._sizing {
+    width: 20vw;
+    height: 20vw;
+    margin: v.$sizing-tiles-margin;
+  }
+}
+
 ._layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: v.$radius;
 }
 
 @mixin highlightBox ($color) {

@@ -1,3 +1,22 @@
+@use '../../../styles/shadows';
+@use '../../../styles/variables' as v;
+
 .footer {
   min-height: 30px;
+
+  button {
+    @include shadows.styling;
+    border: none;
+    background-color: transparent;
+    padding: v.$sizing-button-padding;
+    border-radius: v.$radius;
+    cursor: pointer;
+    transition: v.$transition;
+    font-weight: v.$weight-title;
+    color: #656565;
+
+    &:hover {
+      @include shadows.styling-negative;
+    }
+  }
 }

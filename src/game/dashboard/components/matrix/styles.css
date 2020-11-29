@@ -3,6 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .matrix-container {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

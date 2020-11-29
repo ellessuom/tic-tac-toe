@@ -4,6 +4,20 @@
   margin: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  ._sizing, .tile {
+    width: 25vw;
+    height: 25vw;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  ._sizing, .tile {
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+  }
+}
 ._layout, .tile {
   display: flex;
   justify-content: center;
