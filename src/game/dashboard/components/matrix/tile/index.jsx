@@ -36,6 +36,13 @@ export default function Tile ({ i }) {
     return output.join(' ');
   };
 
+  React.useEffect(() => {
+    if (data.usedTiles.length === 0) {
+      setContent(null);
+    }
+
+  }, [data.usedTiles]);
+
   return (
     <div
       onClick={handleClick}

@@ -37,6 +37,7 @@
   @extend ._sizing;
   @extend ._layout;
   transition: v.$transition;
+  user-select: none;
 
   &.available {
     @include shadows.styling;

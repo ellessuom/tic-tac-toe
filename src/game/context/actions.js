@@ -9,6 +9,7 @@ export const INIT = {
   currentPlayer: PLAYERS_ID.PLAYER_ONE, // user id, either 'p1' or 'p2'
   usedTiles: [],
   winnerPattern: '',
+  winner: '',
 };
 
 const PATTERS = [
@@ -41,9 +42,6 @@ export default (state, dispatch) => {
   };
 
   const _checkCanPlay = () => {
-    if (state.usedTiles.length > 8) {
-      return false;
-    }
     const _dispatchWinner = (playerId) => dispatch({
       winner: playerId,
       [playerId]: {
@@ -92,6 +90,12 @@ export default (state, dispatch) => {
       dispatch({
         canPlay: _checkCanPlay()
       });
+
+      if (state.usedTiles.length > 8) {
+        dispatch({
+          isTie: true,
+        });
+      }
     }
   });
 };

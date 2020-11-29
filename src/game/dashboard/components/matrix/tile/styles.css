@@ -23,6 +23,7 @@
 
 .tile {
   transition: 200ms;
+  user-select: none;
 }
 .tile.available {
   box-shadow: 3px 3px 6px #00000030, -3px -3px 6px #FFFFFF;
