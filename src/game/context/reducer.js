@@ -2,6 +2,7 @@ import {
   INIT,
   PLAYERS_ID
 } from './actions';
+import Cookies from "universal-cookie";
 
 export const initialState = {
   ...INIT,
@@ -16,5 +17,8 @@ export const initialState = {
 };
 
 export default (state, payload) => {
-  return {...state, ...payload };
+  const cookies = new Cookies();
+  const newState = {...state, ...payload };
+  cookies.set('ttt', newState);
+  return newState;
 };

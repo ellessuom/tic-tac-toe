@@ -7,11 +7,20 @@ import './styles.css';
 
 export default function Tile ({ i }) {
   const [ data, actions ] = useData();
-  const [content, setContent] = React.useState(null);
+  let initState = null;
+  if (data.usedTiles.includes(i)) {
+    if (data.p1.selectedTiles.includes(i)) {
+      initState = 'p1';
+    } else {
+      initState = 'p2';
+    }
+  }
+  const [content, setContent] = React.useState(initState);
   const handleClick = () => {
     if (data.canPlay && !content) {
       actions.play(i);
       setContent(data.currentPlayer);
+      actions.verify();
     }
   };
 

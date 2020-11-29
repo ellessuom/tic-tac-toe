@@ -2,23 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import reducer, { initialState } from './reducer';
 import availableActions from './actions';
+import Cookies from "universal-cookie";
 
 const Context = React.createContext();
 
 const DataProvider = ({ children }) => {
-  const [state, dispatch] = React.useReducer(reducer, initialState);
+  const cookies = new Cookies();
+  const [state, dispatch] = React.useReducer(reducer, cookies.get('ttt') || initialState);
   const actions = availableActions(state, dispatch);
 
   const value = React.useMemo(() => [{ ...state }, { ...actions }], [
     state, actions,
   ]);
-
-  React.useEffect(() => {
-    if (state.usedTiles) {
-      actions.verify();
-    }
-
-  }, [state.usedTiles]);
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
