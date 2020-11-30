@@ -12,7 +12,7 @@ export default function Status () {
   if (data.isTie) {
     return <Text.Subtitle>No one wins this time!</Text.Subtitle>;
   }
-  if (data.usedTiles.length === 0) {
+  if (data.usedTiles?.length === 0) {
     return <Text.Subtitle>Select a tile to start the game!</Text.Subtitle>;
   }
   const playerId = data.currentPlayer === 'p1'? 'One' : 'Two';

@@ -23,7 +23,6 @@ export default function Tile ({ i }) {
     }
   };
 
-
   const getClasses = (player) => {
     let output = ['tile'];
     if (data.canPlay) {

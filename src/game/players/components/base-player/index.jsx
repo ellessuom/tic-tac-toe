@@ -2,15 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as Text from '../../../shared-components/base-text';
 import './styles.css';
-import { PLAYERS_ID } from "../../../context/actions";
 import { useData } from "../../../context";
+import labels  from "./labels";
 
-export default function Index ({ playerId }) {
+export default function BasePlayer ({ playerId }) {
   const [ data ] = useData();
-  const labels = {
-    [PLAYERS_ID.PLAYER_ONE]: 'Player One',
-    [PLAYERS_ID.PLAYER_TWO]: 'Player Two',
-  };
 
   return (
     <div className={`base-player-display ${playerId}`}>
@@ -20,6 +16,6 @@ export default function Index ({ playerId }) {
   );
 }
 
-Index.propTypes = {
+BasePlayer.propTypes = {
   playerId: PropTypes.string.isRequired,
 };

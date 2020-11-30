@@ -20,7 +20,7 @@ export default function Footer () {
   return (
     <div className="footer">
       {
-        data.usedTiles.length > 0 && (
+        data.usedTiles?.length > 0 && (
           <button onClick={handleClick}>{buttonText}</button>
         )
       }
