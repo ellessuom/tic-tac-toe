@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="40" failures="0" errors="0" time="3.986">
-  <testsuite name="&lt;Matrix /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="1.697" tests="2">
-    <testcase classname="&lt;Matrix /&gt; should render Matrix structure correctly" name="&lt;Matrix /&gt; should render Matrix structure correctly" time="0.008">
+<testsuites name="jest tests" tests="40" failures="0" errors="0" time="3.943">
+  <testsuite name="&lt;PlayersParent /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="1.83" tests="4">
+    <testcase classname="&lt;PlayersParent /&gt; should render layout structure correctly" name="&lt;PlayersParent /&gt; should render layout structure correctly" time="0.008">
     </testcase>
-    <testcase classname="&lt;Matrix /&gt; should contain all 9 tiles" name="&lt;Matrix /&gt; should contain all 9 tiles" time="0.001">
+    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render both children" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render both children" time="0.001">
     </testcase>
-  </testsuite>
-  <testsuite name="&lt;BasePlayer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="1.629" tests="3">
-    <testcase classname="&lt;BasePlayer /&gt; should render &lt;BasePlayer /&gt; structure correctly" name="&lt;BasePlayer /&gt; should render &lt;BasePlayer /&gt; structure correctly" time="0.005">
+    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render first child with correct playerId prop" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render first child with correct playerId prop" time="0.001">
     </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected title" name="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected title" time="0.004">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected value for wins" name="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected value for wins" time="0.001">
+    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render second child with correct playerId prop" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render second child with correct playerId prop" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;Game /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:24" time="1.536" tests="1">
-    <testcase classname="&lt;Game /&gt; should render app structure correctly" name="&lt;Game /&gt; should render app structure correctly" time="0.008">
+  <testsuite name="&lt;Layout /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="1.894" tests="3">
+    <testcase classname="&lt;Layout /&gt; should have rendered single child" name="&lt;Layout /&gt; should have rendered single child" time="0.002">
+    </testcase>
+    <testcase classname="&lt;Layout /&gt; should render layout structure correctly" name="&lt;Layout /&gt; should render layout structure correctly" time="0.003">
+    </testcase>
+    <testcase classname="&lt;Layout /&gt; should render layout with correct test child" name="&lt;Layout /&gt; should render layout with correct test child" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;Tile /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="2.08" tests="10">
-    <testcase classname="&lt;Tile /&gt; should render the default tile" name="&lt;Tile /&gt; should render the default tile" time="0.005">
+  <testsuite name="&lt;Matrix /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.01" tests="2">
+    <testcase classname="&lt;Matrix /&gt; should render Matrix structure correctly" name="&lt;Matrix /&gt; should render Matrix structure correctly" time="0.15">
     </testcase>
-    <testcase classname="&lt;Tile /&gt; should have default &apos;available&apos; class" name="&lt;Tile /&gt; should have default &apos;available&apos; class" time="0.006">
+    <testcase classname="&lt;Matrix /&gt; should contain all 9 tiles" name="&lt;Matrix /&gt; should contain all 9 tiles" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;BasePlayer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.042" tests="3">
+    <testcase classname="&lt;BasePlayer /&gt; should render &lt;BasePlayer /&gt; structure correctly" name="&lt;BasePlayer /&gt; should render &lt;BasePlayer /&gt; structure correctly" time="0.006">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected title" name="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected title" time="0.007">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected value for wins" name="&lt;BasePlayer /&gt; &lt;BasePlayer /&gt;s children should have the expected value for wins" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;BasePlayer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.015" tests="7">
+    <testcase classname="&lt;BasePlayer /&gt; should contain test child" name="&lt;BasePlayer /&gt; should contain test child" time="0.008">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; should render with correct INIT data" name="&lt;BasePlayer /&gt; should render with correct INIT data" time="0.002">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have update data with correct next player" name="&lt;BasePlayer /&gt; Simulate play should have update data with correct next player" time="0.001">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have update data with correct tile index" name="&lt;BasePlayer /&gt; Simulate play should have update data with correct tile index" time="0.001">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have updated player used tiles with correct tile index" name="&lt;BasePlayer /&gt; Simulate play should have updated player used tiles with correct tile index" time="0">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have not updated the other player with the selected tile" name="&lt;BasePlayer /&gt; Simulate play should have not updated the other player with the selected tile" time="0">
+    </testcase>
+    <testcase classname="&lt;BasePlayer /&gt; Simulate restart expect to have reset the game" name="&lt;BasePlayer /&gt; Simulate restart expect to have reset the game" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Tile /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.149" tests="10">
+    <testcase classname="&lt;Tile /&gt; should render the default tile" name="&lt;Tile /&gt; should render the default tile" time="0.006">
+    </testcase>
+    <testcase classname="&lt;Tile /&gt; should have default &apos;available&apos; class" name="&lt;Tile /&gt; should have default &apos;available&apos; class" time="0.007">
     </testcase>
     <testcase classname="&lt;Tile /&gt; onClick - available tile Player One should have &apos;used&apos; class" name="&lt;Tile /&gt; onClick - available tile Player One should have &apos;used&apos; class" time="0.001">
     </testcase>
@@ -29,73 +59,43 @@
     </testcase>
     <testcase classname="&lt;Tile /&gt; onClick - available tile Player Two should have &apos;used&apos; class" name="&lt;Tile /&gt; onClick - available tile Player Two should have &apos;used&apos; class" time="0.001">
     </testcase>
-    <testcase classname="&lt;Tile /&gt; onClick - available tile Player Two should contain &apos;O&apos; mark" name="&lt;Tile /&gt; onClick - available tile Player Two should contain &apos;O&apos; mark" time="0.001">
+    <testcase classname="&lt;Tile /&gt; onClick - available tile Player Two should contain &apos;O&apos; mark" name="&lt;Tile /&gt; onClick - available tile Player Two should contain &apos;O&apos; mark" time="0">
     </testcase>
-    <testcase classname="&lt;Tile /&gt; onClick - used tile should have &apos;used&apos; class when clicked once" name="&lt;Tile /&gt; onClick - used tile should have &apos;used&apos; class when clicked once" time="0.001">
+    <testcase classname="&lt;Tile /&gt; onClick - used tile should have &apos;used&apos; class when clicked once" name="&lt;Tile /&gt; onClick - used tile should have &apos;used&apos; class when clicked once" time="0.013">
     </testcase>
     <testcase classname="&lt;Tile /&gt; onClick - used tile should not have changed when clicked again" name="&lt;Tile /&gt; onClick - used tile should not have changed when clicked again" time="0.003">
     </testcase>
-    <testcase classname="&lt;Tile /&gt; onClick - used tile Player Two should have &apos;used&apos; class" name="&lt;Tile /&gt; onClick - used tile Player Two should have &apos;used&apos; class" time="0">
+    <testcase classname="&lt;Tile /&gt; onClick - used tile Player Two should have &apos;used&apos; class" name="&lt;Tile /&gt; onClick - used tile Player Two should have &apos;used&apos; class" time="0.001">
     </testcase>
-    <testcase classname="&lt;Tile /&gt; onClick - used tile Player Two should not have changed when clicked again" name="&lt;Tile /&gt; onClick - used tile Player Two should not have changed when clicked again" time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="&lt;PlayersParent /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="1.872" tests="4">
-    <testcase classname="&lt;PlayersParent /&gt; should render layout structure correctly" name="&lt;PlayersParent /&gt; should render layout structure correctly" time="0.01">
-    </testcase>
-    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render both children" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render both children" time="0.001">
-    </testcase>
-    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render first child with correct playerId prop" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render first child with correct playerId prop" time="0.001">
-    </testcase>
-    <testcase classname="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render second child with correct playerId prop" name="&lt;PlayersParent /&gt; &lt;PlayersParent /&gt;&apos;s children should render second child with correct playerId prop" time="0.001">
+    <testcase classname="&lt;Tile /&gt; onClick - used tile Player Two should not have changed when clicked again" name="&lt;Tile /&gt; onClick - used tile Player Two should not have changed when clicked again" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;BasePlayer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="1.76" tests="7">
-    <testcase classname="&lt;BasePlayer /&gt; should contain test child" name="&lt;BasePlayer /&gt; should contain test child" time="0.006">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; should render with correct INIT data" name="&lt;BasePlayer /&gt; should render with correct INIT data" time="0.002">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have update data with correct next player" name="&lt;BasePlayer /&gt; Simulate play should have update data with correct next player" time="0.002">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have update data with correct tile index" name="&lt;BasePlayer /&gt; Simulate play should have update data with correct tile index" time="0.002">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have updated player used tiles with correct tile index" name="&lt;BasePlayer /&gt; Simulate play should have updated player used tiles with correct tile index" time="0.001">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; Simulate play should have not updated the other player with the selected tile" name="&lt;BasePlayer /&gt; Simulate play should have not updated the other player with the selected tile" time="0">
-    </testcase>
-    <testcase classname="&lt;BasePlayer /&gt; Simulate restart expect to have reset the game" name="&lt;BasePlayer /&gt; Simulate restart expect to have reset the game" time="0.001">
+  <testsuite name="&lt;Game /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.175" tests="1">
+    <testcase classname="&lt;Game /&gt; should render app structure correctly" name="&lt;Game /&gt; should render app structure correctly" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;Footer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="1.941" tests="4">
-    <testcase classname="&lt;Footer /&gt; should not render button when no tiles have been used" name="&lt;Footer /&gt; should not render button when no tiles have been used" time="0.003">
-    </testcase>
-    <testcase classname="&lt;Footer /&gt; rendering button when winning should render expected title when someone wins" name="&lt;Footer /&gt; rendering button when winning should render expected title when someone wins" time="0.006">
-    </testcase>
-    <testcase classname="&lt;Footer /&gt; rendering button when playing should render expected title during the game" name="&lt;Footer /&gt; rendering button when playing should render expected title during the game" time="0.001">
-    </testcase>
-    <testcase classname="&lt;Footer /&gt; onClick should trigger &apos;startGame&apos; function" name="&lt;Footer /&gt; onClick should trigger &apos;startGame&apos; function" time="0.004">
-    </testcase>
-  </testsuite>
-  <testsuite name="&lt;Status /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:23" time="2.023" tests="6">
-    <testcase classname="&lt;Status /&gt; should render default title" name="&lt;Status /&gt; should render default title" time="0.005">
+  <testsuite name="&lt;Status /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.17" tests="6">
+    <testcase classname="&lt;Status /&gt; should render default title" name="&lt;Status /&gt; should render default title" time="0.004">
     </testcase>
     <testcase classname="&lt;Status /&gt; rendering title for player one as winner should render the expected title" name="&lt;Status /&gt; rendering title for player one as winner should render the expected title" time="0.001">
     </testcase>
     <testcase classname="&lt;Status /&gt; rendering title for player two as winner should render the expected title" name="&lt;Status /&gt; rendering title for player two as winner should render the expected title" time="0.001">
     </testcase>
-    <testcase classname="&lt;Status /&gt; rendering title for tie should render the expected title" name="&lt;Status /&gt; rendering title for tie should render the expected title" time="0.001">
+    <testcase classname="&lt;Status /&gt; rendering title for tie should render the expected title" name="&lt;Status /&gt; rendering title for tie should render the expected title" time="0">
     </testcase>
-    <testcase classname="&lt;Status /&gt; rendering title for Player One turn should render the expected title" name="&lt;Status /&gt; rendering title for Player One turn should render the expected title" time="0.001">
+    <testcase classname="&lt;Status /&gt; rendering title for Player One turn should render the expected title" name="&lt;Status /&gt; rendering title for Player One turn should render the expected title" time="0">
     </testcase>
-    <testcase classname="&lt;Status /&gt; rendering title for Player Two turn should render the expected title" name="&lt;Status /&gt; rendering title for Player Two turn should render the expected title" time="0">
+    <testcase classname="&lt;Status /&gt; rendering title for Player Two turn should render the expected title" name="&lt;Status /&gt; rendering title for Player Two turn should render the expected title" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;Layout /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:21:24" time="1.929" tests="3">
-    <testcase classname="&lt;Layout /&gt; should have rendered single child" name="&lt;Layout /&gt; should have rendered single child" time="0.001">
+  <testsuite name="&lt;Footer /&gt;" errors="0" failures="0" skipped="0" timestamp="2020-11-30T13:38:26" time="2.427" tests="4">
+    <testcase classname="&lt;Footer /&gt; should not render button when no tiles have been used" name="&lt;Footer /&gt; should not render button when no tiles have been used" time="0.001">
     </testcase>
-    <testcase classname="&lt;Layout /&gt; should render layout structure correctly" name="&lt;Layout /&gt; should render layout structure correctly" time="0.002">
+    <testcase classname="&lt;Footer /&gt; rendering button when winning should render expected title when someone wins" name="&lt;Footer /&gt; rendering button when winning should render expected title when someone wins" time="0.003">
     </testcase>
-    <testcase classname="&lt;Layout /&gt; should render layout with correct test child" name="&lt;Layout /&gt; should render layout with correct test child" time="0.001">
+    <testcase classname="&lt;Footer /&gt; rendering button when playing should render expected title during the game" name="&lt;Footer /&gt; rendering button when playing should render expected title during the game" time="0.001">
+    </testcase>
+    <testcase classname="&lt;Footer /&gt; onClick should trigger &apos;startGame&apos; function" name="&lt;Footer /&gt; onClick should trigger &apos;startGame&apos; function" time="0.002">
     </testcase>
   </testsuite>
 </testsuites>
