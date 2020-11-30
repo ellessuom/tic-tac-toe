@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BasePlayer /> should render <BasePlayer /> structure correctly 1`] = `
+<BasePlayer
+  playerId="fake1"
+>
+  <div
+    className="base-player-display fake1"
+  >
+    <Title>
+      <div
+        className="title"
+      >
+        Player Fake
+      </div>
+    </Title>
+    <Paragraph>
+      <div
+        className="paragraph"
+      >
+        Wins: 
+        3
+      </div>
+    </Paragraph>
+  </div>
+</BasePlayer>
+`;

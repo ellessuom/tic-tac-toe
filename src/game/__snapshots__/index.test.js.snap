@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game /> should render app structure correctly 1`] = `
+<DataProvider>
+  <Layout>
+    <Players />
+    <Dashboard />
+  </Layout>
+</DataProvider>
+`;

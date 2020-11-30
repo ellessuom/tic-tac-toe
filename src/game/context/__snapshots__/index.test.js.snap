@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BasePlayer /> should contain test child 1`] = `
+<ContextProvider
+  value={
+    Array [
+      Object {
+        "canPlay": true,
+        "currentPlayer": "p1",
+        "isTie": false,
+        "p1": Object {
+          "selectedTiles": Array [],
+          "wins": 0,
+        },
+        "p2": Object {
+          "selectedTiles": Array [],
+          "wins": 0,
+        },
+        "usedTiles": Array [],
+        "winner": "",
+        "winnerPattern": "",
+      },
+      Object {
+        "play": [Function],
+        "startGame": [Function],
+        "verify": [Function],
+      },
+    ]
+  }
+>
+  <div
+    id="child-test"
+  />
+</ContextProvider>
+`;

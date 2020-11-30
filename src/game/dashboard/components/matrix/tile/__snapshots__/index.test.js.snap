@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tile /> onClick - used tile Player Two should not have changed when clicked again 1`] = `
+<Tile
+  i={3}
+>
+  <div
+    className="tile used"
+    onClick={[Function]}
+  >
+    <img
+      alt="X"
+      src="mark_x.svg"
+      width={50}
+    />
+  </div>
+</Tile>
+`;
+
+exports[`<Tile /> onClick - used tile should not have changed when clicked again 1`] = `
+<Tile
+  i={3}
+>
+  <div
+    className="tile used"
+    onClick={[Function]}
+  >
+    <img
+      alt="X"
+      src="mark_x.svg"
+      width={50}
+    />
+  </div>
+</Tile>
+`;
+
+exports[`<Tile /> should render the default tile 1`] = `
+<Tile
+  i={3}
+>
+  <div
+    className="tile available p1"
+    onClick={[Function]}
+  />
+</Tile>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayersParent /> should render layout structure correctly 1`] = `
+<div
+  className="players-wrapper"
+>
+  <BasePlayer
+    playerId="p1"
+  />
+  <BasePlayer
+    playerId="p2"
+  />
+</div>
+`;

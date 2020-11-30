@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> should render layout structure correctly 1`] = `
+<div
+  className="game-layout"
+>
+  <div
+    className="layout-test"
+  />
+</div>
+`;
