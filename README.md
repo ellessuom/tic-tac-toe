@@ -1,5 +1,4 @@
 # Tic Tac Toe
-> By Agustin Demousselle (agustin.demousselle@gmail.com)
 
 ## Requirements
 - node >= 14.x
